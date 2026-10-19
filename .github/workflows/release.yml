@@ -77,7 +77,7 @@ jobs:
           rm -rf "$DMG_DIR"; mkdir -p "$DMG_DIR"
           cp -R StrataCtl.app "$DMG_DIR/"
           cp README.md "$DMG_DIR/README.md"
-          cp install-package.sh "$DMG_DIR/install.command"
+          cp dist/strata-ctl/install.sh "$DMG_DIR/install.command"
           chmod +x "$DMG_DIR/install.command"
           hdiutil create -volname "strata-ctl" -srcfolder "$DMG_DIR" -ov -format UDZO \
             "dist/strata-ctl-${VER}-macos.dmg" >/dev/null
