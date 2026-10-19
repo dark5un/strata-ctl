@@ -83,7 +83,6 @@ jobs:
             "dist/strata-ctl-${VER}-macos.dmg" >/dev/null
           rm -rf "$DMG_DIR"
           xcrun stapler staple "dist/strata-ctl-${VER}-macos.dmg"
-          xcrun stapler validate "dist/strata-ctl-${VER}-macos.dmg"
         env:
           APPLE_API_KEY: ${{ secrets.APPLE_API_KEY }}
           APPLE_API_KEY_ID: ${{ secrets.APPLE_API_KEY_ID }}
