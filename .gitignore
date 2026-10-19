@@ -1,0 +1,5 @@
+# compiled artifacts
+/stratactl
+StrataCtl.app
+dist/
+.DS_Store
